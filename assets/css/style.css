@@ -1,0 +1,350 @@
+:root {
+    --primary-color: rgb(255,0,255);
+    --secondary-color:rgb(28,28,28); /* black */
+    --light-secondary-color:rgb(33,33,33); /* used in form fields */
+    --light-color: #fff; /* light used */
+    --gradient-color: linear-gradient(to right, rgb(139, 0,255), rgb(255,0,255));
+    --gradient-hover: linear-gradient(to right,  rgb(255,0,255), rgb(139, 0,255));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-shadow: 1.2px 1.2px var(--light-secondary-color);
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.l-heading {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.1;
+}
+
+.bottom-line {
+    width: 3rem;
+    height: 8px;
+    margin:15px auto;
+    border-radius: 5px;
+    background: var(--secondary-color);
+}
+
+.bottom-line-light {
+    width: 3rem;
+    height: 8px;
+    margin:15px auto;
+    border-radius: 5px;
+    background: var(--light-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gradient-color);
+    font-size: 17px;
+    border:none;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--gradient-hover);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+#navbar {
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+    width: 100%;
+    background: var(--secondary-color);
+    position: sticky;
+    z-index: 1;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li a {
+    color: var(--light-color);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a.active, #navbar ul li a:hover {
+    background: var(--gradient-color);
+}
+
+#main-showcase, #showcase {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    color: #fff;
+    background: var(--light-secondary-color) url('../img/showcase.jpg') no-repeat center center/cover;
+}
+
+#showcase {
+    height: 280px;
+    background-attachment: fixed;
+}
+
+#showcase-content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+#home-desc {
+    background: var(--gradient-color);
+    padding: 1rem;
+}
+
+.boxes, .summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes > div , .summary > div{
+    width: 31%;
+    background: var(--secondary-color);
+    color: #fff;
+    margin: 1%;
+    min-height: 200px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.invert > div:nth-child(even){
+    background: var(--gradient-color);
+}
+
+.invert > div:nth-child(even) i, .invert > div:nth-child(even) .btn {
+    background: var(--secondary-color);
+}
+
+.summary > div {
+    width: 48% !important;
+}
+
+.summary > div img {
+    width: 100%;
+    height: 300px;
+}
+
+.boxes > div i {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 10px;
+    background: var(--gradient-color);
+}
+
+#get-started {
+    position: relative;
+    background: var(--secondary-color) url('../img/showcase.jpg') no-repeat center center/cover;
+    min-height: 170px;
+    max-height: 210px;
+    text-align: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#get-started > div {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.gallery, .bg-dark {
+    background: var(--secondary-color);
+    padding: 1.8rem 0;
+}
+
+.accordion {
+    background: var(--gradient-color);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border: 1px solid #fff;
+    
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding:0 1rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: rgb(139, 0,255);
+    font-weight: 600;
+  }
+
+#contact {
+    width: 70%;
+    margin:2rem auto;
+    background: var(--gradient-color);
+}
+
+#contact > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#join-form {
+    width: 590px;
+    margin:2rem auto;
+    background: var(--gradient-color);
+    text-align: center;
+    padding: 3rem;
+}
+
+#contact > div > div, #join-form > div  {
+    color: #fff;
+    background: var(--secondary-color);
+    padding:2rem 1rem;
+    min-height: 450px;
+}
+
+#join-form > div  {
+    padding: 2rem;
+    min-height: 360px !important;
+    max-height: 470px;
+}
+
+#contact > div > div:first-child {
+    width: 39%;
+    margin-right: 1%;
+}
+
+#contact > div > div:last-child {
+    width: 60%;
+}
+
+
+input, textarea {
+    width: 100%;
+    background: rgb(99, 96, 96);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    margin: 10px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+input::placeholder , textarea::placeholder {
+    color: #fff;
+
+}
+
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos > div {
+    width: 31%;
+    margin:1%;
+    height: 300px;
+    border: 5px solid rgb(139, 0,255);
+}
+
+.photos > div img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: var(--gradient-color);
+    padding: 1rem;
+}
+
+footer > div{
+    color: #fff;
+    background: var(--light-secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div i {
+  padding: 10px;
+  background: var(--gradient-color);
+  border-radius: 50%;
+  margin-right: 5px;
+}

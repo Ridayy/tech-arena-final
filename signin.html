@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css" media="screen and (max-width:760px)">
+        <title>EdgeLedger</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <h1 class="logo">
+                <span class="text-primary">
+                    <i class="fas fa-book-open"></i> Edge
+                </span>
+                Ledger
+            </h1>
+            <ul>
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html" >Services</a>
+                </li>
+                <li>
+                    <a href="contact.html"  >Contact</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="signin.html" class="active">Join</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="join-form">
+            <div>
+                <h1 class="">Hello, Welcome To <span class="text-primary">EdgeLedger</span></h1>
+                <div class="bottom-line-light"></div>
+                <form action="">
+                    
+                    <input type="email" placeholder="Your Email*">
+                    <input type="password" placeholder="Your Password*">
+                    <button class="btn">Submit</button>
+                </form><br>
+                <a href="signup.html" class="text-primary">Don't have an account? Sign Up!</a>
+            </div>
+        </section>
+
+              <footer>
+            <div class="container">
+                <div>
+                    Copyright &copy; 2020. All Rights Reserved By Rida Arif
+                </div>
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+           
+            var navbar = document.getElementById("navbar");
+            window.onscroll = function(){
+                if(document.documentElement.scrollTop >= 400){
+                    navbar.style.opacity = '0.8';
+                    
+                }else{
+                    navbar.style.opacity = '1';
+                   
+                }
+            }
+        </script>
+    </body>
+</html>

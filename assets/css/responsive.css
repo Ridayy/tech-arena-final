@@ -1,0 +1,53 @@
+#navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar ul {
+    margin: 20px;
+}
+
+.boxes > div {
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 40px;
+}
+
+#get-started {
+    height: 300px;
+    padding: 3rem;
+}
+
+.photos > div{
+    width: 70%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.summary > div {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+#join-form {
+    width: 80% !important;
+    margin:20px auto !important;
+}
+
+#contact > div > div {
+    width: 100% !important;
+    margin: 20px 0 !important;
+}
+
+#join 
+
+footer > div {
+    flex-direction: column;
+}
+
+footer > div > div {
+    margin-bottom: 10px;
+}
+
